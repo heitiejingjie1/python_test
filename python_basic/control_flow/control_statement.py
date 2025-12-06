@@ -73,6 +73,20 @@ def match_display():
         case _:
             print("something's wrong with the internet")
 
+    """match还可解构"""
+    point = (30, 26)
+    match point:
+        case (0, 0):
+            print("origin")
+        case (x, 0):
+            print(f"x = {x}")
+        case (0, y):
+            print(f"y = {y}")
+        case (x, y):
+            print(f"x = {x},y = {y}")
+        case _:
+            raise ValueError("not a point")
+
 
 def display():
     # if_display()
