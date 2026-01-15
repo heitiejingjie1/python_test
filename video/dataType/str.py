@@ -61,9 +61,30 @@ def operatorDemo():
         print("不姓殷")
 
 
+"""字符串判断"""
+
+
+def isTrueStr():
+    print("hajhsgsjhDjshkjs".isupper())
+    print("hajhsgsjhDjshkjs".islower())
+    print("DHSJHDHSKSHHD".isupper())
+    print("dhjshgsjsksgdh".islower())
+    print("ndndbdhhjs".isalpha())  # 是否只包含字母
+    print("sjnshshs".isalnum())  # 是否只包含字母和数字
+    print("hsbjsjshdhj".isdecimal())  # 是否只包含数字
+    print("snnsjsjhshsjs".isspace())
+    print("hshshshgsj".istitle())
+
+    """对齐文本"""
+    print("hello".rjust(20, "="))  # 右对齐
+    print("hello".ljust(20, "="))  # 左对齐
+    print("hello".center(20, "="))  # 居中对齐
+
+
 def display():
     # formatAndSliceDemo()
-    operatorDemo()
+    # operatorDemo()
+    isTrueStr()
 
 
 display()
